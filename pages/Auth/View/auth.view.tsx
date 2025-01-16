@@ -13,7 +13,6 @@ interface AuthViewProps {
 }
 
 export default function AuthView({ onSubmit, error }: AuthViewProps) {
-  console.log(error);
   const {
     control,
     handleSubmit,

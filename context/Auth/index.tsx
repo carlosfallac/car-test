@@ -36,8 +36,6 @@ export const AuthProvider: React.FC<{ children: React.ReactNode }> = ({
       .then((response) => {
         AsyncStorage.setItem("@App:user", JSON.stringify(response.data.user));
         setUser(response.data.user);
-        console.log(response.data.user);
-
         setError(false);
       })
       .catch((error) => {
