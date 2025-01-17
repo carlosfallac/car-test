@@ -10,6 +10,7 @@ type FormData = {
 export default function App() {
   const { Login, error } = useContext(AuthContext);
 
+  console.log(error);
   const onSubmit = (data: FormData) => {
     Login(data);
   };
